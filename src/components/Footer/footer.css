@@ -1,0 +1,122 @@
+.footer {
+  background: #000;
+  padding: 56px 24px 32px;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+.footer-top {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.footer-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #2f5bff;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.footer-name {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.footer-tagline {
+  margin: 10px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: flex-start;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-nav a {
+  color: #9aa1ac;
+  font-size: 15px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+  color: #ffffff;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #16181d;
+  color: #9aa1ac;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.footer-social-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-social-icon:hover {
+  color: #ffffff;
+  background: #22252c;
+}
+
+.footer-divider {
+  max-width: 1120px;
+  margin: 40px auto 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom {
+  max-width: 1120px;
+  margin: 24px auto 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+@media (max-width: 640px) {
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-right {
+    gap: 32px;
+  }
+}

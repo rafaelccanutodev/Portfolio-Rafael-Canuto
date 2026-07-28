@@ -1,0 +1,149 @@
+.process {
+  padding: 100px 24px;
+  background: #02040b;
+}
+
+.process__inner {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.process__header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 64px;
+}
+
+.process__eyebrow {
+  display: inline-flex;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  color: #6d88ff;
+  font-size: 0.8rem;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(109, 136, 255, 0.08);
+}
+
+.process__header h2 {
+  margin: 0;
+  font-size: clamp(2.5rem, 3.5vw, 3.8rem);
+  line-height: 1.05;
+}
+
+.process__header p {
+  margin: 20px auto 0;
+  color: #abb2d4;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.process__timeline {
+  position: relative;
+  display: grid;
+  gap: 24px;
+  padding-left: 48px;
+}
+
+.process__timeline::before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.process__step {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.process__marker {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(63, 124, 255, 0.18);
+  color: #f7f8ff;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  border: 1px solid rgba(63, 124, 255, 0.35);
+}
+
+.process__card {
+  padding: 28px 30px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.process__card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(62, 112, 255, 0.2) 0%, rgba(0, 0, 0, 0.95) 100%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.process__card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(91, 138, 255, 0.45);
+  box-shadow: 0 24px 50px rgba(16, 31, 68, 0.35);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.process__card:hover::before {
+  opacity: 1;
+}
+
+.process__card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.process__card h3 {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.process__card p {
+  margin: 0;
+  color: #c7c9dd;
+  line-height: 1.85;
+}
+
+@media (max-width: 760px) {
+  .process {
+    padding: 80px 16px;
+  }
+
+  .process__timeline {
+    padding-left: 0;
+    gap: 16px;
+  }
+
+  .process__step {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .process__timeline::before {
+    left: 20px;
+  }
+
+  .process__card {
+    padding: 20px;
+  }
+}
