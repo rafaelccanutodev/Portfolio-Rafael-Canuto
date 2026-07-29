@@ -1,5 +1,4 @@
 import './about.css'
-import LogoAbout from '../../assets/logo-about.png'
 import Perfil from '../../assets/perfil.jpg'
 function About() {
   return (
