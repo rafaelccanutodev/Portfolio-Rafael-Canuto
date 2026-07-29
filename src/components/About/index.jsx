@@ -1,12 +1,13 @@
 import './about.css'
 import LogoAbout from '../../assets/logo-about.png'
+import Perfil from '../../assets/perfil.jpg'
 function About() {
   return (
     <section className="about" id="sobre">
       <div className="about__inner">
         <div className="about__image-wrapper">
           <div className="about__image-circle">
-            <img className="about__image-circle" src={LogoAbout}/>
+            <img className="about__image-circle" src={Perfil}/>
           </div>
         </div>
 
