@@ -15,6 +15,7 @@
 body {
   margin: 0;
   min-height: 100vh;
+  overflow-x: hidden;
   background: radial-gradient(circle at top, rgba(71, 102, 255, 0.14), transparent 20%),
     radial-gradient(circle at top right, rgba(70, 183, 255, 0.12), transparent 20%),
     linear-gradient(180deg, #060814 0%, #070b16 100%);
@@ -185,6 +186,7 @@ main {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
 @media (max-width: 1040px) {
@@ -212,6 +214,15 @@ main {
 
   .hero {
     gap: 44px;
+    padding: 56px 16px 80px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.4rem, 8vw, 3.2rem);
+  }
+
+  .hero p {
+    font-size: 0.98rem;
   }
 
   .hero__actions {
@@ -225,5 +236,9 @@ main {
 
   .hero__eyebrow {
     margin-bottom: 20px;
+  }
+
+  .hero__card {
+    border-radius: 24px;
   }
 }

@@ -131,7 +131,16 @@
     padding: 80px 16px;
   }
 
+  .services__header {
+    margin-bottom: 36px;
+  }
+
   .services__grid {
     grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 24px;
+    min-height: auto;
   }
 }

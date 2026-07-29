@@ -113,7 +113,15 @@
     padding: 80px 16px;
   }
 
+  .testimonials__header {
+    margin-bottom: 36px;
+  }
+
   .testimonials__grid {
     grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    padding: 24px;
   }
 }
