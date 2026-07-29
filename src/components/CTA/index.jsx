@@ -19,7 +19,7 @@ export default function CtaSection() {
             sua empresa a crescer na internet.
           </p>
  
-          <a href="#orcamento" className="cta-button">
+          <a href="https://wa.me/5548996941150" className="cta-button">
             Solicitar orçamento
             <span className="cta-arrow">→</span>
           </a>
